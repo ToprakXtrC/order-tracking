@@ -1,0 +1,12 @@
+[
+    {
+        "orderCode": "12345",
+        "status": "Onaylandı",
+        "description": "Sipariş başarıyla alındı."
+    },
+    {
+        "orderCode": "67890",
+        "status": "Beklemede",
+        "description": "Siparişiniz hazırlanıyor."
+    }
+]

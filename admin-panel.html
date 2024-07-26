@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Paneli</h1>
+        <form id="orderLookupForm">
+            <label for="orderCode">Sipariş Kodu:</label>
+            <input type="text" id="orderCode" name="orderCode" required>
+            <button type="submit">Durumu ve Açıklamayı Göster</button>
+        </form>
+        <div id="orderDetails" style="display: none;">
+            <h2>Sipariş Detayları</h2>
+            <p id="orderStatus"></p>
+            <p id="orderDescription"></p>
+            <form id="updateOrderForm">
+                <label for="newStatus">Yeni Durum:</label>
+                <input type="text" id="newStatus" name="newStatus" required>
+                <label for="newDescription">Yeni Açıklama:</label>
+                <input type="text" id="newDescription" name="newDescription" required>
+                <button type="submit">Güncelle</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/admin-panel.js"></script>
+</body>
+</html>

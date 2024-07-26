@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sipariş Takip Sistemi</h1>
+        <form id="orderLookupForm">
+            <label for="orderCode">Sipariş Kodu:</label>
+            <input type="text" id="orderCode" name="orderCode" required>
+            <button type="submit">Durumu ve Açıklamayı Göster</button>
+        </form>
+        <div id="orderDetails" style="display: none;">
+            <h2>Sipariş Detayları</h2>
+            <p id="orderStatus"></p>
+            <p id="orderDescription"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
